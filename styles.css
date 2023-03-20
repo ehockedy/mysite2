@@ -26,6 +26,7 @@
 body {
     background-color: var(--primaryBackground);
     margin: 0;
+    font-family: var(--fontRegular);
 }
 
 .main {
@@ -35,13 +36,13 @@ body {
 }
 
 .intro {
-    padding: 32px;
-    padding-left: 64px;
-
+    padding: 48px 32px 32px 48px;
     color: var(--primaryText);
     box-shadow: 4px 0 4px 0px #00000040;
     z-index: 1;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -62,10 +63,32 @@ body {
     padding-top: 24px;
 }
 
+.contactLinks {
+    margin-top: 72px;
+    color: var(--primaryText);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contactLink {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contactLink a {
+    color: inherit;
+}
+
+.contactLinkIcon {
+    width: 24px;
+    height: auto;
+    padding-right: 8px;
+}
 
 .projects {
     overflow-x: hidden;
-    font-family: var(--fontRegular);
 }
 
 .project {
@@ -90,9 +113,10 @@ body {
 
     transform: translateX(0px);
     transition: transform 0.2s;
+}
 
-    /* This looks pretty good, but needs to be implemented better */
-    /* border-bottom: 2px solid black; */
+.separator {
+    border-top: 2px solid var(--primaryText);
 }
 
 .project:hover {
@@ -105,4 +129,15 @@ body {
 
 .wsil {
     background-image: url(./images/wsil.PNG);
+}
+
+.copyright {
+    color: var(--secondaryText);
+    font: var(--fontLight);
+    position: absolute;
+    padding-top: 16px;
+    bottom: 8px;
+    display: flex;
+    align-self: center;
+    font-size: 14px;
 }
