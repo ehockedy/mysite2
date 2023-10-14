@@ -170,7 +170,11 @@ body {
 }
 
 .wsil {
-    background-image: url(./images/wsil.PNG);
+    background-image: url(./images/wsil.png);
+}
+
+.wedding {
+    background-image: url(./images/wedding.png);
 }
 
 .copyright {
