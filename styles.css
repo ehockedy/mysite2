@@ -127,9 +127,8 @@ body {
     align-items: end;
     position: relative;
 
-    height: 100px;
+    height: 140px;
     max-width: 1200px;
-    padding: 16px;
 
     font-size: 36px;
     line-height: 30px;
@@ -144,19 +143,30 @@ body {
     text-shadow: var(--primaryBackground) 0px 0px 8px, var(--primaryBackground) 0px 0px 8px;
 }
 
-.project:hover {
-    box-shadow: 0px 4px 4px #00000040, 0px -4px 4px #00000040;
-    z-index: 1;
+@media screen and (min-width: 768px) {
+    .project:hover {
+        box-shadow: 0px 4px 4px #00000040, 0px -4px 4px #00000040;
+        z-index: 1;
+    }
+}
+
+.projectName {
+    background: #e4e4e4b5;
+    padding: 8px;
 }
 
 @media screen and (max-width: 768px) {
     .project {
         background-position-x: center;
-        height: 150px;
-
+        height: 120px;
+        padding: 0px;
+        font-size: 28px;
     }
     .project:hover {
         transform: none;
+    }
+    .projectName {
+        padding: 4px;
     }
 }
 
